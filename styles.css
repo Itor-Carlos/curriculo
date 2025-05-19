@@ -135,6 +135,7 @@ nav {
 }
 
 .about-text {
+    text-align: justify;
     flex: 1;
 }
 
