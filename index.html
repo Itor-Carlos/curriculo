@@ -4,166 +4,196 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itor Carlos | Desenvolvedor FullStack</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Itor Carlos</div>
-                <div class="nav-links" id="navLinks">
-                    <a href="#about">Sobre</a>
-                    <a href="#skills">Habilidades</a>
-                    <a href="#experience">Experiência</a>
-                    <a href="#projects">Projetos</a>
-                    <a href="#education">Formação</a>
-                    <a href="#contact">Contato</a>
-                </div>
-                <div class="hamburger" id="hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Itor Carlos</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">Sobre</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#experience">Experiência</a>
+                <a href="#projects">Projetos</a>
+                <a href="#education">Formação</a>
+                <a href="#contact">Contato</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <section class="hero">
-        <div class="container">
-            <h1>Itor Carlos Souza Queiroz</h1>
-            <h2>Desenvolvedor FullStack</h2>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Entre em Contato</a>
-                <a href="#projects" class="btn btn-outline">Ver Projetos</a>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Itor Carlos<br>Souza Queiroz</h1>
+                <p class="subtitle">Desenvolvedor FullStack</p>
+                <p class="description">
+                    Criando soluções tecnológicas inovadoras com foco em performance, escalabilidade e experiência do usuário. Especializado em desenvolvimento web moderno e arquiteturas eficientes.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Entre em Contato
+                    </a>
+                    <a href="#projects" class="btn btn-outline">
+                        <i class="fas fa-eye"></i>
+                        Ver Projetos
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dot dot-red"></div>
+                        <div class="window-dot dot-yellow"></div>
+                        <div class="window-dot dot-green"></div>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line"><span class="keyword">const</span> <span class="function">developer</span> = {</div>
+                        <div class="code-line">  name: <span class="string">"Itor Carlos"</span>,</div>
+                        <div class="code-line">  role: <span class="string">"FullStack Developer"</span>,</div>
+                        <div class="code-line">  skills: [<span class="string">"React"</span>, <span class="string">"Node.js"</span>, <span class="string">"Python"</span>]</div>
+                        <div class="code-line">};</div>
+                        <div class="code-line"><span class="comment">// Always learning ✨</span></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about scroll-reveal" id="about">
         <div class="container">
-            <h2 class="section-title">Sobre mim</h2>
-            <div class="about-content">
+            <div class="section-header">
+                <h2 class="section-title">Sobre mim</h2>
+                <p class="section-subtitle">Desenvolvedor apaixonado por tecnologia e inovação</p>
+            </div>
+            <div class="about-grid">
                 <div class="about-text">
-                    <p>Olá! Sou Itor Carlos, desenvolvedor fullstack com foco em criar soluções tecnológicas eficientes, escaláveis e bem estruturadas. </p>
-                    <p>Estou à procura de uma oportunidade como desenvolvedor fullstack júnior ou estagiário onde posso mostrar meus conhecimentos em JavaScript, React, TypeScript, PHP, Django, Node.js, Express, PostgreSQL, Docker, Java e Spring Boot, Laravel e Vue.js.</p>
-                    <p>Sou dedicado a desenvolver interfaces de usuário interativas e eficientes, estou motivado para me integrar a equipes dinâmicas, contribuindo ativamente enquanto aprimoro minhas habilidades através de experiências práticas.</p>
+                    <p>Olá! Sou Itor Carlos, desenvolvedor fullstack com foco em criar soluções tecnológicas eficientes, escaláveis e bem estruturadas. Minha paixão pela programação me levou a dominar tecnologias modernas tanto no frontend quanto no backend.</p>
+                    
+                    <p>Estou à procura de uma oportunidade como desenvolvedor fullstack júnior ou estagiário onde posso demonstrar meus conhecimentos em JavaScript, React, TypeScript, PHP, Django, Node.js, PostgreSQL, Docker e muito mais.</p>
+                    
+                    <p>Sou dedicado a desenvolver interfaces de usuário interativas e eficientes, sempre motivado para me integrar a equipes dinâmicas, contribuindo ativamente enquanto aprimoro minhas habilidades através de experiências práticas.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Tecnologias</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Anos Estudando</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Projetos</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-image">
-                    <img src="assets/profile_image.jpg" alt="Itor Carlos">
+                    <div class="profile-card">
+                        <img src="assets/profile_image.jpg" alt="">
+                        <h3>Itor Carlos</h3>
+                        <p style="color: var(--text-secondary); margin: 0;">Desenvolvedor FullStack</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="skills" id="skills">
+    <section class="skills scroll-reveal" id="skills">
         <div class="container">
-            <h2 class="section-title">Minhas habilidades</h2>
-            <div class="skills-container">
+            <div class="section-header">
+                <h2 class="section-title">Minhas habilidades</h2>
+                <p class="section-subtitle">Tecnologias que domino e utilizo no dia a dia</p>
+            </div>
+            <div class="skills-grid">
                 <div class="skill-card">
-                    <i class="fab fa-js"></i>
-                    <p class="skill-name">JavaScript</p>
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <div class="skill-name">JavaScript</div>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-react"></i>
-                    <p class="skill-name">React</p>
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <div class="skill-name">React</div>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-node-js"></i>
-                    <p class="skill-name">Node.js</p>
+                    <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                    <div class="skill-name">Node.js</div>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <p class="skill-name">HTML5</p>
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <div class="skill-name">Python</div>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-css3-alt"></i>
-                    <p class="skill-name">CSS3</p>
+                    <div class="skill-icon"><i class="fab fa-php"></i></div>
+                    <div class="skill-name">PHP</div>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-vuejs"></i>
-                    <p class="skill-name">Vue.js</p>
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <div class="skill-name">HTML5</div>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-laravel"></i>
-                    <p class="skill-name">Laravel</p>
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <div class="skill-name">CSS3</div>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-python"></i>
-                    <p class="skill-name">Python</p>
+                    <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
+                    <div class="skill-name">Vue.js</div>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-java"></i>
-                    <p class="skill-name">Java</p>
+                    <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                    <div class="skill-name">Laravel</div>
                 </div>
                 <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <p class="skill-name">PostgreSQL</p>
+                    <div class="skill-icon"><i class="fab fa-java"></i></div>
+                    <div class="skill-name">Java</div>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-docker"></i>
-                    <p class="skill-name">Docker</p>
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <div class="skill-name">PostgreSQL</div>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-git-alt"></i>
-                    <p class="skill-name">Git</p>
+                    <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                    <div class="skill-name">Docker</div>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-php"></i>
-                    <p class="skill-name">PHP</p>
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <div class="skill-name">Git</div>
                 </div>
                 <div class="skill-card">
-                    <i class="fas fa-server"></i>
-                    <p class="skill-name">Express</p>
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <div class="skill-name">Express</div>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-aws"></i>
-                    <p class="skill-name">AWS</p>
+                    <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                    <div class="skill-name">AWS</div>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-js"></i>
-                    <p class="skill-name">TypeScript</p>
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <div class="skill-name">TypeScript</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="experience" id="experience">
+    <section class="experience scroll-reveal" id="experience">
         <div class="container">
-            <h2 class="section-title">Experiência profissional</h2>
+            <div class="section-header">
+                <h2 class="section-title">Experiência profissional</h2>
+                <p class="section-subtitle">Minha trajetória como desenvolvedor</p>
+            </div>
             <div class="timeline">
                 <div class="timeline-item">
+                    <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <p class="timeline-date">08/2023 – 04/2024</p>
-                        <h3 class="timeline-title">Analista de Sistema FullStack Junior</h3>
-                        <h4 class="timeline-subtitle">SharkDev Suporte Tecnológico Ltda</h4>
-                        <ul>
-                            <li>Desenvolvimento de scripts de importação e geração de dados para relatórios em PDF</li>
-                            <li>Criação e manutenção de interfaces interativas</li>
-                            <li>Refatoração de scripts antigos</li>
-                            <li>Criação de layouts para geração de relatórios no JSreport</li>
-                            <li>Tecnologias: React, PostgreSQL, Docker e Django</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <p class="timeline-date">05/2023 – 09/2023</p>
-                        <h3 class="timeline-title">Desenvolvedor Freelancer FullStack</h3>
-                        <h4 class="timeline-subtitle">Freelancer</h4>
-                        <ul>
-                            <li>Desenvolvimento de interfaces interativas com Vue.js</li>
-                            <li>Criação e manutenção de APIs com Laravel</li>
-                            <li>Integração completa entre frontend e backend</li>
-                            <li>Implementação de melhorias contínuas</li>
-                            <li>Manutenção de códigos legados</li>
-                            <li>Integração com sistemas externos</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <p class="timeline-date">12/2024 – 08/2025</p>
+                        <div class="timeline-date">Dezembro 2024 – Agosto 2025</div>
                         <h3 class="timeline-title">Desenvolvedor FullStack - PIBIC</h3>
-                        <h4 class="timeline-subtitle">Universidade Federal de Sergipe</h4>
+                        <div class="timeline-subtitle">Universidade Federal de Sergipe</div>
                         <ul>
                             <li>Prototipagem das interfaces com foco em usabilidade e acessibilidade</li>
                             <li>Criação e modelagem do banco de dados relacional em MySQL</li>
@@ -174,50 +204,92 @@
                         </ul>
                     </div>
                 </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Agosto 2023 – Abril 2024</div>
+                        <h3 class="timeline-title">Analista de Sistema FullStack Junior</h3>
+                        <div class="timeline-subtitle">SharkDev Suporte Tecnológico Ltda</div>
+                        <ul>
+                            <li>Desenvolvimento de scripts de importação e geração de dados para relatórios em PDF</li>
+                            <li>Criação e manutenção de interfaces interativas</li>
+                            <li>Refatoração de scripts antigos</li>
+                            <li>Criação de layouts para geração de relatórios no JSreport</li>
+                            <li>Tecnologias: React, PostgreSQL, Docker e Django</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Maio 2023 – Setembro 2023</div>
+                        <h3 class="timeline-title">Desenvolvedor Freelancer FullStack</h3>
+                        <div class="timeline-subtitle">Freelancer</div>
+                        <ul>
+                            <li>Desenvolvimento de interfaces interativas com Vue.js</li>
+                            <li>Criação e manutenção de APIs com Laravel</li>
+                            <li>Integração completa entre frontend e backend</li>
+                            <li>Implementação de melhorias contínuas</li>
+                            <li>Manutenção de códigos legados</li>
+                            <li>Integração com sistemas externos</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="projects scroll-reveal" id="projects">
         <div class="container">
-            <h2 class="section-title">Meus projetos</h2>
+            <div class="section-header">
+                <h2 class="section-title">Meus projetos</h2>
+                <p class="section-subtitle">Alguns dos trabalhos que desenvolvi</p>
+            </div>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-code"></i>
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-chart-bar"></i></div>
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Sistema de Geração de Relatórios</h3>
-                        <p class="project-tech">React, Django, PostgreSQL, Docker</p>
-                        <p>Sistema automatizado para importação e geração de relatórios em PDF desenvolvido durante meu trabalho na SharkDev.</p>
+                        <div class="project-tech">React • Django • PostgreSQL • Docker</div>
+                        <p class="project-description">Sistema automatizado para importação e geração de relatórios em PDF desenvolvido durante meu trabalho na SharkDev. Focado em performance e escalabilidade.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-seedling"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Sistema de Gestão de Fazenda</h3>
+                        <div class="project-tech">React • Node.js • PostgreSQL</div>
+                        <p class="project-description">Sistema de gestão de Fazenda de Grãos desenvolvido na matéria "Engenharia de Software 2" da Universidade Federal de Sergipe.</p>
                         <div class="project-links">
+                            <a href="https://github.com/Itor-Carlos/projeto-es2-frontend" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Frontend
+                            </a>
+                            <a href="https://github.com/Itor-Carlos/projeto-es2-backend" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Backend
+                            </a>
                         </div>
                     </div>
                 </div>
+                
                 <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-code"></i>
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-hands"></i></div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Sistema Web</h3>
-                        <p class="project-tech">React, NodeJs, PostgreSQL</p>
-                        <p>Sistema de gestão de Fazenda de Grãos da matéria "Engenharia de Software 2" da Universidade Federal de Sergipe.</p>
+                        <h3 class="project-title">Glossário Sergipano de Libras</h3>
+                        <div class="project-tech">HTML • CSS • JavaScript • MySQL • PHP</div>
+                        <p class="project-description">Site do Glossário Sergipano de Libras do Departamento de Letras Libras (DELI) da Universidade Federal de Sergipe (UFS).</p>
                         <div class="project-links">
-                            <a target="_blank" href="https://github.com/Itor-Carlos/projeto-es2-frontend"><i class="fab fa-github"></i> GitHub</a>
-                            <a target="_blank" href="https://github.com/Itor-Carlos/projeto-es2-backend"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Sistema Web</h3>
-                        <p class="project-tech">HTML, CSS, JavaScript, MySQL e PHP</p>
-                        <p>Repositório para expor o novo site do Glossário Sergipano de Libras do Departamento de Letras Libras (DELI) da Universidade Federal de Sergipe (UFS) </p>
-                        <div class="project-links">
-                            <a target="_blank" href="https://github.com/Itor-Carlos/PIBIC-DELI-"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://github.com/Itor-Carlos/PIBIC-DELI-" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -225,62 +297,92 @@
         </div>
     </section>
 
-    <section class="education" id="education">
+    <section class="education scroll-reveal" id="education">
         <div class="container">
-            <h2 class="section-title">Formação Acadêmica</h2>
-            <div class="education-card">
-                <p class="education-date">Em andamento</p>
-                <h3 class="education-degree">Graduação em Ciência da Computação</h3>
-                <p class="education-school">Universidade Federal de Sergipe</p>
+            <div class="section-header">
+                <h2 class="section-title">Formação Acadêmica</h2>
+                <p class="section-subtitle">Minha jornada educacional e qualificações</p>
             </div>
-            <div class="education-card">
-                <p class="education-date">Incompleto</p>
-                <h3 class="education-degree">Técnico Integrado em Informática</h3>
-                <p class="education-school">IFBA campus Irecê</p>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-date">Em andamento</div>
+                    <h3 class="education-degree">Graduação em Ciência da Computação</h3>
+                    <p class="education-school">Universidade Federal de Sergipe</p>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-date">Incompleto</div>
+                    <h3 class="education-degree">Técnico Integrado em Informática</h3>
+                    <p class="education-school">IFBA campus Irecê</p>
+                </div>
             </div>
-            <h3 style="margin-top: 3rem; margin-bottom: 1.5rem;">Cursos e Qualificações</h3>
-            <div class="education-card">
-                <h3 class="education-degree">Curso de Javascript e Typescript do básico ao avançado</h3>
-                <p class="education-school">UDEMY – 2024</p>
-            </div>
-            <div class="education-card">
-                <h3 class="education-degree">Formação Fullstack Javascript</h3>
-                <p class="education-school">JStack – 2024</p>
-            </div>
-            <div class="education-card">
-                <h3 class="education-degree">AWS Expert</h3>
-                <p class="education-school">LINUXtips – 2024</p>
-            </div>
-            <div class="education-card">
-                <h3 class="education-degree">HackaTruck MakerSpace</h3>
-                <p class="education-school">Instituto Eldorado – 2022</p>
+            
+            <div style="margin-top: 3rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.5rem;">Cursos e Qualificações</h3>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="education-date">2024</div>
+                        <h3 class="education-degree">Javascript e Typescript do básico ao avançado</h3>
+                        <p class="education-school">UDEMY</p>
+                    </div>
+                    
+                    <div class="education-card">
+                        <div class="education-date">2024</div>
+                        <h3 class="education-degree">Formação Fullstack Javascript</h3>
+                        <p class="education-school">JStack</p>
+                    </div>
+                    
+                    <div class="education-card">
+                        <div class="education-date">2024</div>
+                        <h3 class="education-degree">AWS Expert</h3>
+                        <p class="education-school">LINUXtips</p>
+                    </div>
+                    
+                    <div class="education-card">
+                        <div class="education-date">2022</div>
+                        <h3 class="education-degree">HackaTruck MakerSpace</h3>
+                        <p class="education-school">Instituto Eldorado</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact scroll-reveal" id="contact">
         <div class="container">
-            <h2 class="section-title" style="color: white;">Entre em Contato</h2>
-            <div class="contact-content">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Vamos trabalhar juntos? Entre em contato!</p>
+            </div>
+            <div class="contact-grid">
                 <div class="contact-info">
                     <h3>Informações de Contato</h3>
+                    
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <span>+55 74 999250794</span>
                     </div>
+                    
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <span>itor28carlos@gmail.com</span>
                     </div>
+                    
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Aracaju, Sergipe</span>
                     </div>
-                    <div class="contact-links">
-                        <a href="https://www.linkedin.com/in/itor-carlos-souza-queiroz-255b4616a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/Itor-Carlos" target="_blank"><i class="fab fa-github"></i></a>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/itor-carlos-souza-queiroz-255b4616a/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Itor-Carlos" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
                     </div>
                 </div>
+                
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
@@ -295,7 +397,10 @@
                         <div class="form-group">
                             <textarea class="form-control" placeholder="Sua Mensagem" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
                     </form>
                 </div>
             </div>
@@ -304,69 +409,16 @@
 
     <footer>
         <div class="container">
-            <p class="footer-text">&copy; 2025 Itor Carlos Souza Queiroz. Todos os direitos reservados.</p>
-            <div class="footer-links">
-                <a href="https://www.linkedin.com/in/itor-carlos-souza-queiroz-255b4616a/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/Itor-Carlos" target="_blank">GitHub</a>
+            <div class="footer-content">
+                <p>&copy; 2025 Itor Carlos Souza Queiroz. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/itor-carlos-souza-queiroz-255b4616a/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/Itor-Carlos" target="_blank">GitHub</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('navLinks');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                navLinks.classList.remove('active');
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        const contactForm = document.getElementById('contactForm');
-        
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Obrigado pelo contato! Esta funcionalidade estaria conectada a um backend em um site real.');
-            contactForm.reset();
-        });
-
-        const revealOnScroll = () => {
-            const sections = document.querySelectorAll('section');
-            
-            sections.forEach(section => {
-                const sectionTop = section.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                
-                if (sectionTop < windowHeight * 0.75) {
-                    section.style.opacity = 1;
-                    section.style.transform = 'translateY(0)';
-                }
-            });
-        };
-
-        document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = 0;
-            section.style.transform = 'translateY(20px)';
-            section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-        });
-
-        window.addEventListener('load', revealOnScroll);
-        window.addEventListener('scroll', revealOnScroll);
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
